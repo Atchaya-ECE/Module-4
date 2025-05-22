@@ -34,31 +34,30 @@ obj.mech(r)
 Thus the program executed successfully.
 
 ## Dictionary Operations in Python: Merging Two Dictionaries
-
 ## 🎯 Aim
-To write a Python program that merges **two dictionaries** and combines their key-value pairs.
+To write a Python program that merges *two dictionaries* and combines their key-value pairs.
 
 ## 🧠 Algorithm
-1. Define two dictionaries `dict1` and `dict2` with some key-value pairs.
-2. Define a function `merge()` that merges the two dictionaries using the `**` unpacking operator.
-   - The merged result will combine keys from both dictionaries. If a key exists in both, the value from `dict2` will overwrite that from `dict1`.
-3. Call the `merge()` function and print the merged dictionary.
+1. Define two dictionaries dict1 and dict2 with some key-value pairs.
+2. Define a function merge() that merges the two dictionaries using the ** unpacking operator.
+   - The merged result will combine keys from both dictionaries. If a key exists in both, the value from dict2 will overwrite that from dict1.
+3. Call the merge() function and print the merged dictionary.
 
 ## 🧾 Program
-```
-a=eval(input())
-b=eval(input())
-c=a.copy()
-c.update(b)
-print(c)
-```
 
+dict1={'Ten': 10,'Twenty': 20,'Thirty': 30} 
+dict2={'Thirty': 30,'Fourty': 40,'Fifty': 50} def 
+merge (dict1,dict2): 
+res={**dict1 , **dict2} return 
+res 
+dict3=merge(dict1,dict2) 
+print(dict3)
 
 ## Output
-![438927958-73844d5d-fea7-4dff-8ee5-c2483641e2c0](https://github.com/user-attachments/assets/f5d0d3cb-d3fe-4282-b01e-db598dfca37d)
+![Screenshot (145)](https://github.com/user-attachments/assets/e8333efb-3f5c-488e-bca7-cb30b9252da2)
 
 ## Result
-Thus the program executed successfully.
+thus,the program has been executed successfully.
 
 # 🔤 Dictionary-Python Program to Sort a Dictionary by Keys and Values
 
@@ -78,34 +77,45 @@ To write a Python program that sorts a dictionary's:
 
 ## 🧠 Algorithm
 
-1. **Start the program.**
-2. **Define** a dictionary with key-value pairs.
-3. **Sort by Keys**:
-   - Use `sorted(dictionary.items())`
-   - Convert the result to a dictionary using `dict()`
-4. **Sort by Values**:
-   - Use `sorted(dictionary.items(), key=lambda item: item[1])`
-   - Convert the result to a dictionary using `dict()`
-5. **Display** the original and sorted dictionaries.
-6. **End the program.**
+1. *Start the program.*
+2. *Define* a dictionary with key-value pairs.
+3. *Sort by Keys*:
+   - Use sorted(dictionary.items())
+   - Convert the result to a dictionary using dict()
+4. *Sort by Values*:
+   - Use sorted(dictionary.items(), key=lambda item: item[1])
+   - Convert the result to a dictionary using dict()
+5. *Display* the original and sorted dictionaries.
+6. *End the program.*
 
 ---
 
 ## 🧪Program
-```
-input_dict = {2: 56, 1: 2, 5: 12, 4: 24, 6: 18, 3: 323}
-sorted_items = sorted(input_dict.items())
-print("Keys and Values sorted in alphabetical order by the key")
-for key, value in sorted_items:
-    print(f"({key}, {value})", end=' ')
-```
+
+def dictionairy():  
+ key_value ={}   
+ key_value[2] = 56      
+ key_value[1] = 2
+ key_value[5] = 12
+ key_value[4] = 24
+ key_value[6] = 18     
+ key_value[3] = 323
+ s=sorted(key_value.items(),key=lambda x:x[1])
+ print ("Keys and Values sorted in alphabetical order by the value")
+ print(s)
+ 
+def main():
+    
+    dictionairy()           
+
 
 ## Sample Output
-![438929274-b38f43b5-8014-4748-bc5d-24ae8167f0a3](https://github.com/user-attachments/assets/f9bc0b79-70a0-4faa-8ce8-edca68c8b723)
-![438929346-daca5cff-0653-4587-a017-9100a4137da1](https://github.com/user-attachments/assets/5f0cb2ce-5eaf-40ee-91a3-94b8a5596e3c)
+![image](https://github.com/user-attachments/assets/f19f2bd9-a6f6-4aa4-a418-0d570459faa2)
+
 
 ## Result
-Thus the program executed successfully
+
+The program successfully sorts the dictionary by its keys and values in alphabetical order and prints both sorted versions along with the original dictionary.
 
 # Exception Handling in Python: Avoiding Index Errors
 
@@ -142,33 +152,32 @@ except IndexError:
 Thus the program executed successfully.
 
 # File Handling in Python: Count Lines Not Starting with 'T'
-
 ## 🎯 Aim
-To write a Python program that counts the number of lines in a text file `story.txt` that do **not** start with the alphabet `'T'`.
+To write a Python program that counts the number of lines in a text file story.txt that do *not* start with the alphabet 'T'.
 
 ## 🧠 Algorithm
-1. Open the file `story.txt` in **read mode**.
-2. Initialize a counter `count` to zero.
+1. Open the file story.txt in *read mode*.
+2. Initialize a counter count to zero.
 3. Iterate through each line of the file:
-   - Check if the first character of the line is **not** `'T'`.
-   - If the line does not start with `'T'`, increment the `count` by 1.
-4. After processing all lines, print the `count` value, which represents the number of lines that do not start with `'T'`.
+   - Check if the first character of the line is *not* 'T'.
+   - If the line does not start with 'T', increment the count by 1.
+4. After processing all lines, print the count value, which represents the number of lines that do not start with 'T'.
 
 ## 🧾 Program
-```
-file=open("story.txt","r") 
-count=0 
-for lines in file: 
-   if lines [0] not in 'T': 
-      count+=1 
-print(count)
-```
+
+def returnSum(myDict):
+    final=0
+    for i in myDict.values():
+        final+=i
+    return final
+#driver functions
+
+myDict = {'a': 100, 'b': 200, 'c': 300}
+print("Sum :",returnSum(myDict))
+
 
 ## Output
-![438931030-d4b93207-2ea7-4b97-8047-17da8d4ce0e0](https://github.com/user-attachments/assets/13136331-234c-4912-8d61-42e7d783c8ec)
+![Screenshot (148)](https://github.com/user-attachments/assets/584ecff1-9dfb-4670-b1c8-ee354a85ed3d)
 
 ## Result
-Thus the program executed successfully.
-
-
-
+Thus,the program has been executed successfully.
